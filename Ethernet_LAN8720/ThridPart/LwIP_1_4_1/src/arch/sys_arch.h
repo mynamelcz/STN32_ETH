@@ -31,7 +31,9 @@
  */
 #ifndef __SYS_RTXC_H__
 #define __SYS_RTXC_H__
+#include "lwip/def.h"
 
+u32_t sys_now(void);
 
 #endif /* __SYS_RTXC_H__ */
 

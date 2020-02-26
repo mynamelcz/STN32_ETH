@@ -62,7 +62,7 @@
 /* Define those to better describe your network interface. */
 #define IFNAME0 'e'
 #define IFNAME1 'n'
-static unsigned char MAC_ADDR[6] = {1,2,3,4,5,6};
+static unsigned char MAC_ADDR[6] = {0x00,0x0e,0xc6,0xc7,0xc8,0xca};
 /**
  * Helper struct to hold private data used to operate your ethernet interface.
  * Keeping the ethernet address of the MAC in this struct is not necessary

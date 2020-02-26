@@ -324,7 +324,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>1</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\HalLib\CMSIS\Include;..\HalLib\CMSIS\Device\ST\STM32F4xx\Include;..\HalLib\STM32F4xx_StdPeriph_Driver\inc;..\HalLib\STM32F4x7_ETH_Driver\inc;..\Bsp\inc;..\Main\inc;..\Main;..\Dev\LAN8720;..\ThridPart\LwIP_1_4_1\arch;..\ThridPart\LwIP_1_4_1\src\include;..\ThridPart\LwIP_1_4_1\src\include\lwip;..\ThridPart\LwIP_1_4_1\src\include\netif;..\ThridPart\LwIP_1_4_1\src\include\ipv4;..\ThridPart\LwIP_1_4_1\lwip_app</IncludePath>
+              <IncludePath>..\HalLib\CMSIS\Include;..\HalLib\CMSIS\Device\ST\STM32F4xx\Include;..\HalLib\STM32F4xx_StdPeriph_Driver\inc;..\HalLib\STM32F4x7_ETH_Driver\inc;..\Bsp\inc;..\Main\inc;..\Main;..\Dev\LAN8720;..\ThridPart\LwIP_1_4_1\src\include;..\ThridPart\LwIP_1_4_1\src\include\lwip;..\ThridPart\LwIP_1_4_1\src\include\netif;..\ThridPart\LwIP_1_4_1\src\include\ipv4;..\ThridPart\LwIP_1_4_1\lwip_app;..\ThridPart\LwIP_1_4_1\src\arch</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -491,6 +491,21 @@
               <FileName>lwip_tcp_server.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\ThridPart\LwIP_1_4_1\lwip_app\lwip_tcp_server.c</FilePath>
+            </File>
+            <File>
+              <FileName>lwip_ping.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ThridPart\LwIP_1_4_1\lwip_app\lwip_ping.c</FilePath>
+            </File>
+            <File>
+              <FileName>lwip_udp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ThridPart\LwIP_1_4_1\lwip_app\lwip_udp.c</FilePath>
+            </File>
+            <File>
+              <FileName>tftp_udp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ThridPart\LwIP_1_4_1\lwip_app\tftp_udp.c</FilePath>
             </File>
           </Files>
         </Group>

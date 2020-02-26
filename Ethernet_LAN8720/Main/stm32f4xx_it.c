@@ -138,10 +138,12 @@ void PendSV_Handler(void)
   * @param  None
   * @retval None
   */
+unsigned int lwip_localtime = 0;
 void SysTick_Handler(void)
 {
 	extern void TimingDelay_Decrement(void);
 	TimingDelay_Decrement();
+	lwip_localtime++;
 
 	
 }

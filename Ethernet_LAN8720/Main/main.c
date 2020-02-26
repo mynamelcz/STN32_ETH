@@ -8,9 +8,14 @@
 
 /*dev*/
 #include "LAN8720.h"
+#include "lwip/timers.h"
 
 #include "lwip_init.h"
+/*lwip app*/
 #include "lwip_tcp_server.h"
+#include "lwip_ping.h"
+#include "lwip_udp.h"
+#include "tftp_udp.h"
 
 u8 MAC_ADDR[6] = {1,2,3,4,5,6};
 
@@ -24,11 +29,13 @@ int main(void)
 	LOG_D(">>>>Power On <<<<<\n");
 	
 	lwip_app_init();
-  tcp_echoserver_init();
-
+	// tcp_echoserver_init();
+	//	lwip_ping_init();
+	//lwip_udp_init();
+	tftp_server_init();
 	while(1)
 	{
-
+		sys_check_timeouts();
 	}
 #if 0	
 	ETH_BSP_Config(MAC_ADDR);
@@ -76,7 +83,10 @@ int main(void)
 #endif
 }
 
-
+void my_assrt_filed(uint8_t *file, uint32_t line)
+{
+	DBUG_Printf("[assrt_filed]:__file:%s;__line:%d",file,line);
+}
 
 /* Exported macro ------------------------------------------------------------*/
 #ifdef  USE_FULL_ASSERT

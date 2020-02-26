@@ -8,7 +8,7 @@
 
 //NO_SYS==1:不使用操作系统
 #define NO_SYS                  1  //使用FreeRCOS操作系统
-#define NO_SYS_NO_TIMERS        1
+#define NO_SYS_NO_TIMERS        0
 
 #define LWIP_HAVE_LOOPIF                1
 
@@ -43,7 +43,7 @@
 #define PBUF_POOL_SIZE          20
 
 //PBUF_POOL_BUFSIZE:每个pbuf内存池大小. 
-#define PBUF_POOL_BUFSIZE       512
+//#define PBUF_POOL_BUFSIZE       512
 
 
 /* ---------- TCP选项---------- */
@@ -161,7 +161,7 @@
 #define LWIP_DEBUG                      1 //关闭DEBUG选项
 
 
-
+#define UDP_DEBUG                       LWIP_DBG_OFF
 #define ICMP_DEBUG                      LWIP_DBG_ON //开启/关闭ICMPdebug
 
 #endif /* __LWIPOPTS_H__ */
